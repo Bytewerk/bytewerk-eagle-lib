@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -129,18 +129,18 @@
 <circle x="0" y="0" radius="13.5" width="0.2" layer="51"/>
 <circle x="0" y="0" radius="5" width="0.5" layer="51"/>
 </package>
-<package name="HIGH-BUT">
-<wire x1="2.25" y1="2.25" x2="-2.25" y2="2.25" width="0.1" layer="51"/>
-<wire x1="-2.25" y1="2.25" x2="-2.25" y2="-2.25" width="0.1" layer="51"/>
-<wire x1="-2.25" y1="-2.25" x2="2.25" y2="-2.25" width="0.1" layer="51"/>
-<wire x1="2.25" y1="-2.25" x2="2.25" y2="2.25" width="0.1" layer="51"/>
-<smd name="Y1" x="3" y="1.8" dx="1.5" dy="1" layer="1"/>
-<smd name="Y2" x="3" y="-1.8" dx="1.5" dy="1" layer="1"/>
-<smd name="A1" x="-3" y="1.8" dx="1.5" dy="1" layer="1"/>
-<smd name="A2" x="-3" y="-1.8" dx="1.5" dy="1" layer="1"/>
+<package name="ALPS_SKRAA">
+<wire x1="3.1" y1="3.1" x2="-3.1" y2="3.1" width="0.1" layer="51"/>
+<wire x1="-3.1" y1="3.1" x2="-3.1" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="-3.1" y1="-3.1" x2="3.1" y2="-3.1" width="0.1" layer="51"/>
+<wire x1="3.1" y1="-3.1" x2="3.1" y2="3.1" width="0.1" layer="51"/>
+<smd name="A2" x="2.85" y="2" dx="2.8" dy="1" layer="1"/>
+<smd name="B2" x="2.85" y="-2" dx="2.8" dy="1" layer="1"/>
+<smd name="A1" x="-2.85" y="2" dx="2.8" dy="1" layer="1"/>
+<smd name="B1" x="-2.85" y="-2" dx="2.8" dy="1" layer="1"/>
 <circle x="0" y="0" radius="1" width="0.1" layer="51"/>
-<text x="0" y="2" size="0.5" layer="25" align="top-center">&gt;NAME</text>
-<text x="0" y="-2" size="0.5" layer="27" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="0.1" size="1" layer="25" font="vector" ratio="16" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.1" size="1" layer="27" font="vector" ratio="16" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -290,15 +290,15 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="HIGH-BUT" prefix="S">
+<deviceset name="ALPS_SKRAA" prefix="S">
 <gates>
 <gate name="G$1" symbol="BUTTON" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HIGH-BUT">
+<device name="" package="ALPS_SKRAA">
 <connects>
-<connect gate="G$1" pin="A" pad="A1 Y2"/>
-<connect gate="G$1" pin="A1" pad="A2 Y1"/>
+<connect gate="G$1" pin="A" pad="A1 A2"/>
+<connect gate="G$1" pin="A1" pad="B1 B2"/>
 </connects>
 <technologies>
 <technology name=""/>
