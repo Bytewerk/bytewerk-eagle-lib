@@ -99,6 +99,54 @@
 </symbol>
 </symbols>
 <devicesets>
+<deviceset name="GND">
+<gates>
+<gate name="G$1" symbol="GND" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V">
+<gates>
+<gate name="G$1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3">
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V">
+<gates>
+<gate name="G$1" symbol="+12V" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
