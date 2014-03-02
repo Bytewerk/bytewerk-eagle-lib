@@ -1840,7 +1840,7 @@
 <text x="0" y="12.954" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 <pin name="AVCC" x="-15.24" y="7.62" length="middle" direction="pwr"/>
 <pin name="AREF" x="-15.24" y="-5.08" length="middle" direction="pas"/>
-<pin name="XTAL1" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="XTAL1" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="XTAL2" x="15.24" y="10.16" length="middle" rot="R180"/>
 <pin name="VCC" x="-15.24" y="10.16" length="middle" direction="pwr"/>
 <pin name="GND" x="-15.24" y="-10.16" length="middle" direction="pwr"/>
@@ -2580,7 +2580,7 @@
 <description>&lt;b&gt;8-bit Microcontroller&lt;/b&gt; with 64K Bytes In-System Programmable Flash&lt;p&gt;
 Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</description>
 <gates>
-<gate name="G$1" symbol="ATMEGA164-PWR" x="-48.26" y="7.62"/>
+<gate name="PWR" symbol="ATMEGA164-PWR" x="-48.26" y="7.62"/>
 <gate name="PORTA" symbol="ATMEGA164-PORTA" x="-101.6" y="22.86"/>
 <gate name="PORTB" symbol="ATMEGA164-PORTB" x="-104.14" y="-7.62"/>
 <gate name="PORTC" symbol="ATMEGA164-PORTC" x="-104.14" y="-38.1"/>
@@ -2589,13 +2589,6 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <devices>
 <device name="A" package="TQFP44">
 <connects>
-<connect gate="G$1" pin="!RESET!" pad="4"/>
-<connect gate="G$1" pin="AREF" pad="29"/>
-<connect gate="G$1" pin="AVCC" pad="27"/>
-<connect gate="G$1" pin="GND" pad="6 18 28 39"/>
-<connect gate="G$1" pin="VCC" pad="5 17 38"/>
-<connect gate="G$1" pin="XTAL1" pad="8"/>
-<connect gate="G$1" pin="XTAL2" pad="7"/>
 <connect gate="PORTA" pin="(PCINT0/ADC0)PA0" pad="37"/>
 <connect gate="PORTA" pin="(PCINT1/ADC1)PA1" pad="36"/>
 <connect gate="PORTA" pin="(PCINT2/ADC2)PA2" pad="35"/>
@@ -2628,6 +2621,13 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <connect gate="PORTD" pin="(PCINT29/OC1A)PD5" pad="14"/>
 <connect gate="PORTD" pin="(PCINT30/OC2B/ICP)PD6" pad="15"/>
 <connect gate="PORTD" pin="(PCINT31/OC2A)PD7" pad="16"/>
+<connect gate="PWR" pin="!RESET!" pad="4"/>
+<connect gate="PWR" pin="AREF" pad="29"/>
+<connect gate="PWR" pin="AVCC" pad="27"/>
+<connect gate="PWR" pin="GND" pad="6 18 28 39"/>
+<connect gate="PWR" pin="VCC" pad="5 17 38"/>
+<connect gate="PWR" pin="XTAL1" pad="8"/>
+<connect gate="PWR" pin="XTAL2" pad="7"/>
 </connects>
 <technologies>
 <technology name="">
