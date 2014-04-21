@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -52,11 +52,11 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -72,6 +72,7 @@
 <description>Creative Commons 3.0 CC-BY-SA</description>
 <packages>
 <package name="CASE76X50X27">
+<description>Verschraubtes Gehäuse aus ABS mit seitlichen Rillen zum Einstecken von Platinen (71 mm oder 45 mm). Farbe schwarz. Maße (LxBxH): 76x50x27 mm.</description>
 <dimension x1="0" y1="0" x2="0" y2="45" x3="-5" y3="22.5" textsize="3" layer="47"/>
 <dimension x1="0" y1="45" x2="71" y2="45" x3="35.5" y3="50" textsize="3" layer="47"/>
 <wire x1="5" y1="45" x2="5" y2="41" width="0.1" layer="20"/>
@@ -91,24 +92,45 @@
 <wire x1="66" y1="45" x2="66" y2="41" width="0.1" layer="20"/>
 <wire x1="67" y1="40" x2="71" y2="40" width="0.1" layer="20"/>
 </package>
+<package name="CASE66X66X28">
+<description>Transparentes Hand-Gehäuse in Blau - die folgenden Detailinformationen helfen Ihnen bei der Auswahl und beim Kaufen des richtigen Produktes für Ihre Belange im Conrad Online Shop:
+Handinstrumenten-Gehäuse geeignet für elektronische Leiterplatten. Aus transparentem, blauen Kunststoff mit satinierter Oberfläche gefertigt.</description>
+<wire x1="-28.5" y1="29.5" x2="28.5" y2="29.5" width="0.2" layer="20"/>
+<wire x1="29.5" y1="28.5" x2="29.5" y2="11" width="0.2" layer="20"/>
+<wire x1="29.5" y1="4.5" x2="29.5" y2="-28.5" width="0.2" layer="20"/>
+<wire x1="28.5" y1="-29.5" x2="-28.5" y2="-29.5" width="0.2" layer="20"/>
+<hole x="-14" y="14" drill="3.2"/>
+<hole x="14" y="14" drill="3.2"/>
+<hole x="-14" y="-14" drill="3.2"/>
+<hole x="14" y="-14" drill="3.2"/>
+<wire x1="-29.5" y1="-28.5" x2="-29.5" y2="4.5" width="0.2" layer="20"/>
+<wire x1="-29.5" y1="11" x2="-29.5" y2="28.5" width="0.2" layer="20"/>
+<wire x1="24.5" y1="4.5" x2="24.5" y2="11" width="0.2" layer="20" curve="-180"/>
+<wire x1="-24.5" y1="11" x2="-24.5" y2="4.5" width="0.2" layer="20" curve="-180"/>
+<wire x1="24.5" y1="11" x2="29.5" y2="11" width="0.2" layer="20"/>
+<wire x1="24.5" y1="4.5" x2="29.5" y2="4.5" width="0.2" layer="20"/>
+<wire x1="-24.5" y1="11" x2="-29.5" y2="11" width="0.2" layer="20"/>
+<wire x1="-24.5" y1="4.5" x2="-29.5" y2="4.5" width="0.2" layer="20"/>
+<wire x1="-28.5" y1="29.5" x2="-29.5" y2="28.5" width="0.2" layer="20"/>
+<wire x1="28.5" y1="29.5" x2="29.5" y2="28.5" width="0.2" layer="20"/>
+<wire x1="29.5" y1="-28.5" x2="28.5" y2="-29.5" width="0.2" layer="20"/>
+<wire x1="-29.5" y1="-28.5" x2="-28.5" y2="-29.5" width="0.2" layer="20"/>
+<circle x="14" y="14" radius="2.5" width="0" layer="41"/>
+<circle x="-14" y="14" radius="2.5" width="0" layer="41"/>
+<circle x="-14" y="-14" radius="2.5" width="0" layer="41"/>
+<circle x="14" y="-14" radius="2.5" width="0" layer="41"/>
+<circle x="14" y="14" radius="2.5" width="0" layer="42"/>
+<circle x="-14" y="14" radius="2.5" width="0" layer="42"/>
+<circle x="-14" y="-14" radius="2.5" width="0" layer="42"/>
+<circle x="14" y="-14" radius="2.5" width="0" layer="42"/>
+<dimension x1="-28.5" y1="-29.5" x2="-28.5" y2="29.5" x3="-43" y3="0" textsize="3" layer="47"/>
+<dimension x1="-28.5" y1="29.5" x2="-29" y2="11" x3="-35" y3="20.25" textsize="3" layer="47" dtype="vertical"/>
+<dimension x1="-29.5" y1="28.5" x2="29.5" y2="28.5" x3="0" y3="35" textsize="3" layer="47" dtype="horizontal"/>
+</package>
 </packages>
 <symbols>
 </symbols>
 <devicesets>
-<deviceset name="CASE_76X50X27">
-<description>Verschraubtes Gehäuse aus ABS mit seitlichen Rillen zum Einstecken von Platinen (71 mm oder 45 mm). Farbe schwarz. Maße (LxBxH): 76x50x27 mm.</description>
-<gates>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="OC_POLLIN" value="460 007" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
