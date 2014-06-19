@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -268,6 +268,23 @@
 <wire x1="1.6" y1="3" x2="1.9" y2="3" width="0.1" layer="21"/>
 <text x="0" y="2" size="0.75" layer="21" font="vector" ratio="16" align="top-center">&gt;NAME</text>
 </package>
+<package name="FTS-105-01-X-DV">
+<smd name="1" x="-2.54" y="-2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="7" x="1.27" y="-2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="9" x="2.54" y="-2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="10" x="2.54" y="2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="8" x="1.27" y="2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="6" x="0" y="2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="2.032" dx="2.79" dy="0.74" layer="1" rot="R90"/>
+<wire x1="-3.175" y1="1.7145" x2="-3.175" y2="-1.7145" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-1.7145" x2="3.175" y2="-1.7145" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.7145" x2="3.175" y2="1.7145" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.7145" x2="-3.175" y2="1.7145" width="0.127" layer="21"/>
+<text x="-3.048" y="-0.508" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AVR_SPI_PROGRAMMER_6">
@@ -332,6 +349,24 @@
 <wire x1="5.08" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
 <text x="2.54" y="7.874" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
 <text x="2.54" y="-12.954" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+</symbol>
+<symbol name="JTAG">
+<pin name="GND@3" x="-15.24" y="-2.54" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@5" x="-15.24" y="-7.62" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND@9" x="-15.24" y="-12.7" visible="pin" length="middle" direction="pwr"/>
+<pin name="VREF" x="-15.24" y="12.7" visible="pin" length="middle" direction="out"/>
+<pin name="TMS" x="15.24" y="12.7" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="TCK" x="15.24" y="7.62" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="TDO" x="15.24" y="2.54" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="TDI" x="15.24" y="-2.54" visible="pin" length="middle" direction="in" rot="R180"/>
+<pin name="RTCK" x="15.24" y="-7.62" visible="pin" length="middle" direction="out" rot="R180"/>
+<pin name="SRST" x="15.24" y="-12.7" visible="pin" length="middle" direction="in" rot="R180"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<text x="-8.89" y="3.81" size="2.54" layer="97">JTAG</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -414,6 +449,36 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 <attribute name="MF" value="HIROSE" constant="no"/>
 <attribute name="MPN" value="ZX62-AB-5PA(11)" constant="no"/>
 <attribute name="OC_MOUSER" value="798-ZX62-AB-5PA11" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JTAG" prefix="X">
+<gates>
+<gate name="G$1" symbol="JTAG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FTS-105-01-X-DV">
+<connects>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GND@9" pad="9"/>
+<connect gate="G$1" pin="RTCK" pad="7"/>
+<connect gate="G$1" pin="SRST" pad="10"/>
+<connect gate="G$1" pin="TCK" pad="4"/>
+<connect gate="G$1" pin="TDI" pad="8"/>
+<connect gate="G$1" pin="TDO" pad="6"/>
+<connect gate="G$1" pin="TMS" pad="2"/>
+<connect gate="G$1" pin="VREF" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER" value="FCI" constant="no"/>
+<attribute name="MPN" value="20021121-00010C4LF" constant="no"/>
+<attribute name="OC_DIGIKEY" value="609-3695-1-ND" constant="no"/>
+<attribute name="OC_FARNELL" value="1865279" constant="no"/>
+<attribute name="OC_MOUSER" value="649-202112100010C4LF" constant="no"/>
 </technology>
 </technologies>
 </device>
