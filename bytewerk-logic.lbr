@@ -240,6 +240,55 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
 <rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
 </package>
+<package name="SO16">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
+body 3.9 mm/JEDEC MS-012AC</description>
+<wire x1="-5.395" y1="3.9" x2="5.395" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="5.395" y1="-3.9" x2="-5.395" y2="-3.9" width="0.1998" layer="39"/>
+<wire x1="-5.395" y1="-3.9" x2="-5.395" y2="3.9" width="0.1998" layer="39"/>
+<wire x1="4.94" y1="-1.9" x2="-4.94" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="-1.9" x2="-4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="-1.4" x2="-4.94" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-4.94" y1="1.9" x2="4.94" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="-1.4" x2="-4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="1.9" x2="4.94" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="4.94" y1="-1.4" x2="4.94" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="5.395" y1="3.9" x2="5.395" y2="-3.9" width="0.1998" layer="39"/>
+<smd name="2" x="-3.175" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-4.445" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="4.445" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="3.175" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="3.175" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="4.445" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="15" x="-3.175" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="16" x="-4.445" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-5.08" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-4.445" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-4.6901" y1="-3.1001" x2="-4.1999" y2="-2" layer="51"/>
+<rectangle x1="-3.4201" y1="-3.1001" x2="-2.9299" y2="-2" layer="51"/>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="2.9299" y1="-3.1001" x2="3.4201" y2="-2" layer="51"/>
+<rectangle x1="4.1999" y1="-3.1001" x2="4.6901" y2="-2" layer="51"/>
+<rectangle x1="4.1999" y1="2" x2="4.6901" y2="3.1001" layer="51"/>
+<rectangle x1="2.9299" y1="2" x2="3.4201" y2="3.1001" layer="51"/>
+<rectangle x1="-3.4201" y1="2" x2="-2.9299" y2="3.1001" layer="51"/>
+<rectangle x1="-4.6901" y1="2" x2="-4.1999" y2="3.1001" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="74HVC125-IO">
@@ -311,6 +360,30 @@ MAX3223-MAX3243.pdf</description>
 <pin name="VCCB" x="20.32" y="-30.48" length="middle" direction="pwr" rot="R180"/>
 <text x="7.62" y="5.08" size="1.778" layer="94" rot="R180">&gt;NAME</text>
 <text x="0" y="-40.64" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="8-SHIFTREGISTER">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<pin name="Q1" x="-12.7" y="5.08" length="middle" direction="oc"/>
+<pin name="Q2" x="-12.7" y="2.54" length="middle" direction="oc"/>
+<pin name="Q3" x="-12.7" y="0" length="middle" direction="oc"/>
+<pin name="Q4" x="-12.7" y="-2.54" length="middle" direction="oc"/>
+<pin name="Q5" x="-12.7" y="-5.08" length="middle" direction="oc"/>
+<pin name="Q6" x="-12.7" y="-7.62" length="middle" direction="oc"/>
+<pin name="Q7" x="-12.7" y="-10.16" length="middle" direction="oc"/>
+<pin name="GND" x="12.7" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="12.7" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="Q0" x="-12.7" y="7.62" length="middle" direction="oc"/>
+<pin name="DS" x="12.7" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="!OE!" x="12.7" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="STCP" x="12.7" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="SHCP" x="12.7" y="-5.08" length="middle" direction="in" rot="R180"/>
+<pin name="!MR!" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="Q7S" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<text x="0" y="10.414" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-12.954" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -396,6 +469,37 @@ with automatic direction recognition and Push-Pull or Open-Drain configuration</
 <connect gate="G$1" pin="OE" pad="10"/>
 <connect gate="G$1" pin="VCCA" pad="2"/>
 <connect gate="G$1" pin="VCCB" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74HC595" prefix="IC">
+<description>&lt;b&gt;8bit shift register&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="8-SHIFTREGISTER" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SO16">
+<connects>
+<connect gate="G$1" pin="!MR!" pad="10"/>
+<connect gate="G$1" pin="!OE!" pad="13"/>
+<connect gate="G$1" pin="DS" pad="14"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="Q0" pad="15"/>
+<connect gate="G$1" pin="Q1" pad="1"/>
+<connect gate="G$1" pin="Q2" pad="2"/>
+<connect gate="G$1" pin="Q3" pad="3"/>
+<connect gate="G$1" pin="Q4" pad="4"/>
+<connect gate="G$1" pin="Q5" pad="5"/>
+<connect gate="G$1" pin="Q6" pad="6"/>
+<connect gate="G$1" pin="Q7" pad="7"/>
+<connect gate="G$1" pin="Q7S" pad="9"/>
+<connect gate="G$1" pin="SHCP" pad="11"/>
+<connect gate="G$1" pin="STCP" pad="12"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
