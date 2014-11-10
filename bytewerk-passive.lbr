@@ -360,6 +360,19 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="1.2954" y1="-0.8636" x2="1.8542" y2="0.8636" layer="51"/>
 <rectangle x1="-0.9906" y1="-0.7874" x2="-0.381" y2="0.7874" layer="51"/>
 </package>
+<package name="SOD323">
+<wire x1="-0.8" y1="0.575" x2="0.8" y2="0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="0.575" x2="0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="0.8" y1="-0.575" x2="-0.8" y2="-0.575" width="0.2032" layer="51"/>
+<wire x1="-0.8" y1="-0.575" x2="-0.8" y2="0.575" width="0.2032" layer="51"/>
+<smd name="C" x="-1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<smd name="A" x="1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<text x="0" y="0.8" size="1" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.8" size="1" layer="27" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.35" y1="-0.2" x2="-0.9" y2="0.2" layer="51"/>
+<rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
+<rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="R">
@@ -680,6 +693,28 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHOTTKY" prefix="D">
+<description>&lt;b&gt;schottky&lt;/b&gt;&lt;p&gt;30V, 200mA&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="323" package="SOD323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Vishay" constant="no"/>
+<attribute name="MPN" value="BAT54WS-E3-18
+" constant="no"/>
+<attribute name="OC_MOUSER" value="78-BAT54WS-E3-18 " constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
