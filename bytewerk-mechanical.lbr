@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="6.9" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -170,6 +170,24 @@
 <wire x1="4.9" y1="-3.75" x2="3.75" y2="-4.9" width="0.2" layer="21"/>
 <wire x1="2.5" y1="2.75" x2="3.25" y2="3" width="0.2" layer="21"/>
 <wire x1="3.25" y1="3" x2="3" y2="2.25" width="0.2" layer="21"/>
+</package>
+<package name="515-1049--LIGHTGUIDE">
+<wire x1="8.2" y1="-1.8" x2="8.2" y2="1.8" width="0.2" layer="21"/>
+<wire x1="8.2" y1="1.8" x2="15.6" y2="1.8" width="0.2" layer="51"/>
+<wire x1="15.6" y1="1.8" x2="15.6" y2="-1.8" width="0.2" layer="51"/>
+<wire x1="15.6" y1="-1.8" x2="8.2" y2="-1.8" width="0.2" layer="51"/>
+<hole x="3.92" y="0" drill="2.2"/>
+<hole x="6.9" y="0" drill="2.2"/>
+<wire x1="8.2" y1="1.8" x2="2.6" y2="1.8" width="0.2" layer="21"/>
+<wire x1="2.6" y1="1.8" x2="-1.1" y2="1.8" width="0.2" layer="21"/>
+<wire x1="8.2" y1="-1.8" x2="2.6" y2="-1.8" width="0.2" layer="21"/>
+<wire x1="2.6" y1="-1.8" x2="-1.1" y2="-1.8" width="0.2" layer="21"/>
+<wire x1="-1.1" y1="-1.8" x2="-1.1" y2="1.8" width="0.2" layer="51"/>
+<circle x="0" y="0" radius="1" width="0.2" layer="51"/>
+<wire x1="12.9" y1="0" x2="14.9" y2="0" width="0.2" layer="51"/>
+<wire x1="14.9" y1="0" x2="13.9" y2="0.5" width="0.2" layer="51"/>
+<wire x1="14.9" y1="0" x2="13.9" y2="-0.5" width="0.2" layer="51"/>
+<wire x1="2.6" y1="-1.8" x2="2.6" y2="1.8" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -380,17 +398,26 @@
 </devices>
 </deviceset>
 <deviceset name="LIGHTGUIDE-3MM" prefix="M" uservalue="yes">
-<description>&lt;b&gt;Lightguide vertical 3mm&lt;/b&gt;&lt;p&gt;For TopLED&lt;/p&gt;</description>
+<description>&lt;b&gt;Lightguide 3mm&lt;/b&gt;&lt;p&gt;For TopLED&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LIGHTGUIDE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1216.1003--LIGHTGUIDE">
+<device name="V" package="1216.1003--LIGHTGUIDE">
 <technologies>
 <technology name="">
 <attribute name="MF" value="MENTOR" constant="no"/>
 <attribute name="MPN" value="1216.1003" constant="no"/>
 <attribute name="OC_REICHELT" value="MEN 1216.1003" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="H" package="515-1049--LIGHTGUIDE">
+<technologies>
+<technology name="">
+<attribute name="MF" value="Dialight" constant="no"/>
+<attribute name="MPN" value="515-1049F" constant="no"/>
+<attribute name="OC_RS" value="546-0334" constant="no"/>
 </technology>
 </technologies>
 </device>
