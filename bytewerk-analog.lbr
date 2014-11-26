@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -181,48 +181,56 @@
 <pin name="CTRL" x="17.78" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="AD8557">
-<wire x1="-2.64" y1="2.636" x2="-2.64" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-2.64" y1="-27.94" x2="7.62" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-27.94" x2="38.142" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="38.142" y1="-27.94" x2="38.142" y2="2.636" width="0.254" layer="94"/>
-<wire x1="38.142" y1="2.636" x2="-2.64" y2="2.636" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-20.32" x2="2.54" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-25.4" x2="21.76" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="21.76" y1="-15.24" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="4.38" y1="-10.8" x2="5.92" y2="-10.8" width="0.254" layer="94"/>
-<wire x1="5.16" y1="-10.08" x2="5.16" y2="-11.58" width="0.254" layer="94"/>
-<wire x1="4.56" y1="-19.88" x2="5.86" y2="-19.88" width="0.254" layer="94"/>
-<pin name="IN-" x="-7.62" y="-20.32" length="middle" direction="in"/>
-<pin name="IN+" x="-7.62" y="-10.16" length="middle" direction="in"/>
-<pin name="VOUT" x="43.18" y="-15.24" length="middle" direction="out" rot="R180"/>
-<pin name="VDD" x="7.62" y="7.62" length="middle" direction="pwr" rot="R270"/>
-<pin name="VSS" x="7.62" y="-33.02" length="middle" direction="pwr" rot="R90"/>
-<pin name="VCLAMP" x="12.7" y="7.62" length="middle" direction="in" rot="R270"/>
-<pin name="DIGIN" x="43.18" y="0" length="middle" direction="in" rot="R180"/>
-<pin name="DIGOUT" x="43.18" y="-2.54" length="middle" direction="out" rot="R180"/>
-<wire x1="20.238" y1="-2.68" x2="20.238" y2="-7.718" width="0.254" layer="94"/>
-<wire x1="20.238" y1="-7.718" x2="28.12" y2="-7.718" width="0.254" layer="94"/>
-<wire x1="28.12" y1="-7.718" x2="28.12" y2="-3.68" width="0.254" layer="94"/>
-<wire x1="28.12" y1="-3.68" x2="28.12" y2="-2.68" width="0.254" layer="94"/>
-<wire x1="28.12" y1="-2.68" x2="20.238" y2="-2.68" width="0.254" layer="94"/>
-<text x="21.46" y="-6.38" size="1.778" layer="94">GAIN</text>
-<wire x1="38.1" y1="0" x2="35.56" y2="0" width="0.2" layer="94" style="shortdash"/>
-<wire x1="35.56" y1="0" x2="35.56" y2="-3.68" width="0.2" layer="94" style="shortdash"/>
-<wire x1="35.56" y1="-3.68" x2="28.12" y2="-3.68" width="0.2" layer="94" style="shortdash"/>
-<wire x1="38.1" y1="-2.54" x2="36.83" y2="-2.54" width="0.2" layer="94" style="shortdash"/>
-<wire x1="36.83" y1="-2.54" x2="36.83" y2="-5.08" width="0.2" layer="94" style="shortdash"/>
-<wire x1="36.83" y1="-5.08" x2="28.194" y2="-5.08" width="0.2" layer="94" style="shortdash"/>
-<wire x1="20.038" y1="-5.48" x2="17.884" y2="-5.48" width="0.2" layer="94" style="shortdash"/>
-<wire x1="17.884" y1="-5.48" x2="17.884" y2="-13.142" width="0.2" layer="94" style="shortdash"/>
-<wire x1="21.59" y1="-15.24" x2="38.1" y2="-15.24" width="0.2" layer="94" style="shortdash"/>
-<wire x1="7.62" y1="-27.94" x2="7.62" y2="-22.86" width="0.2" layer="94" style="shortdash"/>
-<wire x1="7.62" y1="2.54" x2="7.62" y2="-7.62" width="0.2" layer="94" style="shortdash"/>
-<wire x1="12.7" y1="2.54" x2="12.7" y2="-10.16" width="0.2" layer="94" style="shortdash"/>
-<wire x1="-2.6" y1="-10.188" x2="2.46" y2="-10.188" width="0.2" layer="94" style="shortdash"/>
-<wire x1="-2.54" y1="-20.32" x2="2.54" y2="-20.32" width="0.2" layer="94" style="shortdash"/>
-<text x="17.78" y="-25.4" size="1.27" layer="94">&gt;NAME</text>
-<text x="17.78" y="-22.86" size="1.27" layer="94">&gt;VALUE</text>
+<wire x1="-20.42" y1="17.876" x2="-20.42" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-20.42" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="20.362" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="20.362" y1="-12.7" x2="20.362" y2="17.876" width="0.254" layer="94"/>
+<wire x1="20.362" y1="17.876" x2="-20.42" y2="17.876" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-5.08" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-10.16" x2="3.98" y2="0" width="0.254" layer="94"/>
+<wire x1="3.98" y1="0" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-13.4" y1="4.44" x2="-11.86" y2="4.44" width="0.254" layer="94"/>
+<wire x1="-12.62" y1="5.16" x2="-12.62" y2="3.66" width="0.254" layer="94"/>
+<wire x1="-13.22" y1="-4.64" x2="-11.92" y2="-4.64" width="0.254" layer="94"/>
+<pin name="IN-" x="-25.4" y="-5.08" visible="pad" length="middle" direction="in"/>
+<pin name="IN+" x="-25.4" y="5.08" visible="pad" length="middle" direction="in"/>
+<pin name="VOUT" x="25.4" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
+<pin name="VDD" x="-10.16" y="22.86" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VSS" x="-10.16" y="-17.78" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCLAMP" x="-5.08" y="22.86" visible="pad" length="middle" direction="in" rot="R270"/>
+<pin name="DIGIN" x="25.4" y="15.24" visible="pad" length="middle" direction="in" rot="R180"/>
+<pin name="DIGOUT" x="25.4" y="12.7" visible="pad" length="middle" direction="out" rot="R180"/>
+<wire x1="1.188" y1="12.56" x2="1.188" y2="7.522" width="0.254" layer="94"/>
+<wire x1="1.188" y1="7.522" x2="9.07" y2="7.522" width="0.254" layer="94"/>
+<wire x1="9.07" y1="7.522" x2="9.07" y2="11.56" width="0.254" layer="94"/>
+<wire x1="9.07" y1="11.56" x2="9.07" y2="12.56" width="0.254" layer="94"/>
+<wire x1="9.07" y1="12.56" x2="1.188" y2="12.56" width="0.254" layer="94"/>
+<text x="2.41" y="8.86" size="1.778" layer="94">GAIN</text>
+<wire x1="20.32" y1="15.24" x2="17.78" y2="15.24" width="0.2" layer="94" style="shortdash"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="11.56" width="0.2" layer="94" style="shortdash"/>
+<wire x1="17.78" y1="11.56" x2="9.07" y2="11.56" width="0.2" layer="94" style="shortdash"/>
+<wire x1="20.32" y1="12.7" x2="19.05" y2="12.7" width="0.2" layer="94" style="shortdash"/>
+<wire x1="19.05" y1="12.7" x2="19.05" y2="10.16" width="0.2" layer="94" style="shortdash"/>
+<wire x1="19.05" y1="10.16" x2="9.144" y2="10.16" width="0.2" layer="94" style="shortdash"/>
+<wire x1="0.988" y1="9.76" x2="0.104" y2="9.76" width="0.2" layer="94" style="shortdash"/>
+<wire x1="0.104" y1="9.76" x2="0.104" y2="2.098" width="0.2" layer="94" style="shortdash"/>
+<wire x1="3.81" y1="0" x2="20.32" y2="0" width="0.2" layer="94" style="shortdash"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="-7.62" width="0.2" layer="94" style="shortdash"/>
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="7.62" width="0.2" layer="94" style="shortdash"/>
+<wire x1="-5.08" y1="17.78" x2="-5.08" y2="5.08" width="0.2" layer="94" style="shortdash"/>
+<wire x1="-20.38" y1="5.052" x2="-15.32" y2="5.052" width="0.2" layer="94" style="shortdash"/>
+<wire x1="-20.32" y1="-5.08" x2="-15.24" y2="-5.08" width="0.2" layer="94" style="shortdash"/>
+<text x="-2.54" y="-11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-8.89" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="16.51" size="1.778" layer="95" rot="R270">VCLAMP</text>
+<text x="-8.89" y="16.51" size="1.778" layer="95" rot="R270">VDD</text>
+<text x="16.51" y="13.97" size="1.778" layer="95" rot="MR0">DIGIN</text>
+<text x="10.16" y="7.62" size="1.778" layer="95">DIGOUT</text>
+<text x="5.08" y="1.27" size="1.778" layer="95">VOUT</text>
+<text x="-8.89" y="-11.43" size="1.778" layer="95" rot="MR90">VSS</text>
+<text x="-16.51" y="-3.81" size="1.778" layer="95" rot="MR0">IN-</text>
+<text x="-16.51" y="6.35" size="1.778" layer="95" rot="MR0">IN+</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -308,6 +316,7 @@ Digitally Programmable Gain and Output Offset, Zero Drift and Very Low Offset Vo
 <technology name="">
 <attribute name="MF" value="AD"/>
 <attribute name="MPN" value="AD8557"/>
+<attribute name="OC_MOUSER" value="584-AD8557ARZ " constant="no"/>
 </technology>
 </technologies>
 </device>
