@@ -175,6 +175,28 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <rectangle x1="-0.6256" y1="1.5" x2="-0.3756" y2="2.5" layer="51" rot="R180"/>
 <rectangle x1="-1.1256" y1="1.5" x2="-0.8756" y2="2.5" layer="51" rot="R180"/>
 </package>
+<package name="SOT23-6">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
+<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
+<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
+<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
+<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -280,8 +302,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <pin name="P$8" x="-15.24" y="-5.08" visible="pad" length="middle" direction="nc"/>
 <pin name="P$9" x="-15.24" y="-7.62" visible="pad" length="middle" direction="nc"/>
 <pin name="P$10" x="-15.24" y="-10.16" visible="pad" length="middle" direction="nc"/>
-<text x="2.54" y="-15.24" size="1.27" layer="95">&gt;NAME</text>
-<text x="2.54" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
+<text x="2.54" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-7.62" y="-5.08" size="1.778" layer="95">NC</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="95">NC</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="95">NC</text>
@@ -301,8 +323,23 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <pin name="AIN2" x="-17.78" y="-2.54" length="middle" direction="in"/>
 <pin name="AIN3" x="-17.78" y="-7.62" length="middle" direction="in"/>
 <pin name="ALRT/RDY" x="17.78" y="-2.54" length="middle" direction="out" rot="R180"/>
-<text x="2.54" y="-17.78" size="1.27" layer="95">&gt;NAME</text>
-<text x="2.54" y="-20.32" size="1.27" layer="96">&gt;VALUE</text>
+<text x="2.54" y="-17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ADS1100">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="VIN+" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="VIN-" x="-15.24" y="-7.62" length="middle" direction="in"/>
+<pin name="VDD" x="15.24" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="-15.24" y="7.62" length="middle" direction="pwr"/>
+<pin name="SCL" x="15.24" y="-7.62" length="middle" direction="in" rot="R180"/>
+<pin name="SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<text x="-2.54" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<text x="2.54" y="-7.62" size="5.08" layer="94" rot="R90">ADC</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -447,6 +484,31 @@ Digitally Programmable Gain and Output Offset, Zero Drift and Very Low Offset Vo
 <attribute name="MF" value="TI" constant="no"/>
 <attribute name="MPN" value="ADS1115DGS" constant="no"/>
 <attribute name="OC_MOUSER" value="595-ADS1115IDGST" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS1100" prefix="IC">
+<description>16-Bit ANALOG-TO-DIGITAL CONVERTER, I2C</description>
+<gates>
+<gate name="G$1" symbol="ADS1100" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="3"/>
+<connect gate="G$1" pin="SDA" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VIN+" pad="1"/>
+<connect gate="G$1" pin="VIN-" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="TI" constant="no"/>
+<attribute name="MPN" value="ADS1100" constant="no"/>
+<attribute name="OC_MOUSER" value="595-ADS1100A1IDBVT" constant="no"/>
 </technology>
 </technologies>
 </device>
