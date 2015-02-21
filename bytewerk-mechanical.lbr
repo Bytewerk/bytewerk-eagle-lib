@@ -207,6 +207,19 @@
 <pad name="C1" x="-7" y="-3.6" drill="1.2"/>
 <pad name="C2" x="0.5" y="-10.2" drill="1.2"/>
 </package>
+<package name="VLP-250-R--LIGHTGUIDE">
+<wire x1="-2.35" y1="2.35" x2="-2.35" y2="-2.35" width="0.2" layer="21"/>
+<wire x1="-2.35" y1="-2.35" x2="2.35" y2="-2.35" width="0.2" layer="21"/>
+<wire x1="2.35" y1="-2.35" x2="2.35" y2="2.35" width="0.2" layer="21"/>
+<wire x1="2.35" y1="2.35" x2="-2.35" y2="2.35" width="0.2" layer="21"/>
+<hole x="2.05" y="2.05" drill="0.61"/>
+<hole x="-2.05" y="-2.05" drill="0.61"/>
+<circle x="0" y="0" radius="1.5" width="0.2" layer="51"/>
+<wire x1="-1.65" y1="1.65" x2="-1.65" y2="-1.65" width="0.2" layer="51"/>
+<wire x1="-1.65" y1="-1.65" x2="1.65" y2="-1.65" width="0.2" layer="51"/>
+<wire x1="1.65" y1="-1.65" x2="1.65" y2="1.65" width="0.2" layer="51"/>
+<wire x1="1.65" y1="1.65" x2="-1.65" y2="1.65" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCM2A">
@@ -470,6 +483,15 @@
 <attribute name="MF" value="Dialight" constant="no"/>
 <attribute name="MPN" value="515-1049F" constant="no"/>
 <attribute name="OC_RS" value="546-0334" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="V2" package="VLP-250-R--LIGHTGUIDE">
+<technologies>
+<technology name="">
+<attribute name="MF" value="Bivar" constant="no"/>
+<attribute name="MPN" value="VLP-250-R" constant="no"/>
+<attribute name="OC_RS" value="713-4769" constant="no"/>
 </technology>
 </technologies>
 </device>
