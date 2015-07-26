@@ -945,7 +945,7 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 <gate name="9" symbol="F" x="0" y="-20.32" addlevel="always"/>
 </gates>
 <devices>
-<device name="-H9" package="SUBD9">
+<device name="-F_H9" package="SUBD9">
 <connects>
 <connect gate="1" pin="F" pad="1"/>
 <connect gate="2" pin="F" pad="2"/>
@@ -956,6 +956,22 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 <connect gate="7" pin="F" pad="7"/>
 <connect gate="8" pin="F" pad="8"/>
 <connect gate="9" pin="F" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-M_H9" package="SUBD9">
+<connects>
+<connect gate="1" pin="F" pad="5"/>
+<connect gate="2" pin="F" pad="4"/>
+<connect gate="3" pin="F" pad="3"/>
+<connect gate="4" pin="F" pad="2"/>
+<connect gate="5" pin="F" pad="1"/>
+<connect gate="6" pin="F" pad="9"/>
+<connect gate="7" pin="F" pad="8"/>
+<connect gate="8" pin="F" pad="7"/>
+<connect gate="9" pin="F" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
