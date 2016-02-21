@@ -574,6 +574,18 @@
 <rectangle x1="4.8864" y1="-6.56" x2="6.0864" y2="-4.06" layer="51"/>
 <rectangle x1="-9.2" y1="-4.16" x2="9.2" y2="-2.56" layer="21"/>
 </package>
+<package name="TC2030">
+<hole x="-2.54" y="0" drill="1"/>
+<smd name="2" x="-1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="4" x="0" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="6" x="1.27" y="0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="5" x="1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="1" x="-1.27" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<smd name="3" x="0" y="-0.635" dx="0.7874" dy="0.7874" layer="1" roundness="100"/>
+<hole x="2.54" y="-1.016" drill="1"/>
+<hole x="2.54" y="1.016" drill="1"/>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AVR_SPI_PROGRAMMER_6">
@@ -766,6 +778,19 @@
 </technologies>
 </device>
 <device name="2.56-H" package="2X3-HS">
+<connects>
+<connect gate="G$1" pin="+5V" pad="2"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="MISO" pad="1"/>
+<connect gate="G$1" pin="MOSI" pad="4"/>
+<connect gate="G$1" pin="RESET" pad="5"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TC2030" package="TC2030">
 <connects>
 <connect gate="G$1" pin="+5V" pad="2"/>
 <connect gate="G$1" pin="GND" pad="6"/>
